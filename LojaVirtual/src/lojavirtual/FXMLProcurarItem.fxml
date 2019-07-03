@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#Search" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lojavirtual.FXMLProcurarItemController">
+   <children>
+      <TextField fx:id="fieldProcura" layoutX="185.0" layoutY="224.0" onAction="#Search" prefHeight="43.0" prefWidth="245.0" />
+      <Text fx:id="lblInform" layoutX="207.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORME O CODIGO">
+         <font>
+            <Font name="Arial Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblTitulo" layoutX="158.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROCURAR PRODUTO">
+         <font>
+            <Font name="Arial Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <TextFlow fx:id="FlowPrincipal" layoutX="200.0" layoutY="124.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="nameProduct" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Arial Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="marcaProduct" prefHeight="27.0" prefWidth="201.0">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="tipoProduct" layoutX="10.0" layoutY="32.0" prefHeight="27.0" prefWidth="201.0">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="precoProduct" layoutX="10.0" layoutY="59.0" prefHeight="27.0" prefWidth="201.0">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="idProduct" layoutX="10.0" layoutY="86.0" prefHeight="27.0" prefWidth="201.0">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+      <Text fx:id="txtProdutoEncontrado" layoutX="164.0" layoutY="96.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUTO ENCONTRADO">
+         <font>
+            <Font name="Arial Bold Italic" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="btVoltar" layoutX="14.0" layoutY="356.0" mnemonicParsing="false" onAction="#BotaoVoltar" prefHeight="30.0" prefWidth="117.0" text="Voltar">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

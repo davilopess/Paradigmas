@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lojavirtual.FXMLCarrinhoController">
+   <children>
+      <Separator layoutX="300.0" orientation="VERTICAL" prefHeight="432.0" prefWidth="12.0" />
+      <TextField fx:id="txtNome" layoutX="368.0" layoutY="130.0" />
+      <TextField fx:id="txtCep" layoutX="368.0" layoutY="171.0" />
+      <TextField fx:id="txtEstado" layoutX="368.0" layoutY="216.0" />
+      <TextField fx:id="txtCidade" layoutX="368.0" layoutY="261.0" />
+      <TextField fx:id="txtEndereco" layoutX="368.0" layoutY="303.0" />
+      <ListView fx:id="listaProd" layoutX="173.0" layoutY="123.0" prefHeight="211.0" prefWidth="89.0" />
+      <Button fx:id="btnBack" layoutX="28.0" layoutY="379.0" mnemonicParsing="false" onAction="#BackInicio" prefHeight="36.0" prefWidth="79.0" text="Voltar" />
+      <Text layoutX="368.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="140.13671875" />
+      <Text layoutX="368.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="140.13671875" />
+      <Text layoutX="368.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado" wrappingWidth="140.13671875" />
+      <Text layoutX="372.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereco" wrappingWidth="140.13671875" />
+      <Text layoutX="368.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" wrappingWidth="140.13671875" />
+      <Button fx:id="btnBack1" layoutX="462.0" layoutY="345.0" mnemonicParsing="false" onAction="#ResetLoja" prefHeight="70.0" prefWidth="118.0" text="Finalizar Compra" />
+      <ImageView fitHeight="78.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/painel3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/carrinho.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

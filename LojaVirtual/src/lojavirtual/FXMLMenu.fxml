@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lojavirtual.FXMLMenuController">
+   <children>
+      <Label layoutX="176.0" prefHeight="54.0" prefWidth="251.0" text="         Menu" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="btCatalogo" layoutY="72.0" mnemonicParsing="false" onAction="#BotaoCatalogo" prefHeight="39.0" prefWidth="300.0" text="Catálogo">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSearch" layoutX="300.0" layoutY="72.0" mnemonicParsing="false" onAction="#Procurar" prefHeight="39.0" prefWidth="300.0" text="Procurar Item">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="91.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/painel3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="252.0" fitWidth="594.0" layoutX="6.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/sds.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btVoltar" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" onAction="#BotaoInicio" prefHeight="39.0" prefWidth="102.0" text="Voltar">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
